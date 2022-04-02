@@ -18,9 +18,9 @@ public class Lab02 {
 	
 	public static void problem01() {
 		Scanner inKey = new Scanner(System.in);
-		System.out.println("Choose a positive integer");
+		System.out.println("Type a positive integer");
 		int userNum = inKey.nextInt();
-		System.out.println("Choose a positive integer");
+		System.out.println("Type in a positive integer");
 		int userNum2 = inKey.nextInt();
 		int max = Integer.MIN_VALUE;
 		int min = Integer.MAX_VALUE;
@@ -35,11 +35,11 @@ public class Lab02 {
 	
 	public static void problem02() {
 		Scanner inKey = new Scanner(System.in);
-		System.out.println("Choose radius of cylinder");
+		System.out.println("Choose the radius of a cylinder");
 		int radius = inKey.nextInt();
-		System.out.println("Choose height of cylinder");
+		System.out.println("Choose the height of the cylinder");
 		int height = inKey.nextInt();
-		System.out.println(Math.pow(radius, 2) * height Math.pi);
+		System.out.println(Math.pow(radius, 2) * height * Math.PI);
 		
 	}
 
@@ -48,13 +48,13 @@ public class Lab02 {
 
 	public static void problem03() {
 		Scanner inKey = new Scanner(System.in);
-		System.out.println("enter x1");
+		System.out.println("Enter x1");
 		double x1 = inKey.nextDouble();
-		System.out.println("enter y1");
+		System.out.println("Enter y1");
 		double y1 = inKey.nextDouble();
-		System.out.println("enter x2");
+		System.out.println("Enter x2");
 		double x2 = inKey.nextDouble();
-		System.out.println("enter y2");
+		System.out.println("Enter y2");
 		double y2 = inKey.nextDouble();
 		System.out.println( Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1 - y2, 2)));
 		
@@ -66,11 +66,11 @@ public class Lab02 {
 	
 	public static void problem04() {
 		Scanner inKey = new Scanner(System.in);
-		System.out.print("enter a: ");
+		System.out.print("Enter A: ");
 		double a = inKey.nextDouble();
-		System.out.print("enter b: ");
+		System.out.print("Enter B: ");
 		double b = inKey.nextDouble();
-		System.out.print("enter c: ");
+		System.out.print("Enter  C: ");
 		double c = inKey.nextDouble();
 		
 		System.out.println("x1 = " + ((-1*b + Math.sqrt(Math.pow(b, 2) -4*a*c)) / (2*a) ));

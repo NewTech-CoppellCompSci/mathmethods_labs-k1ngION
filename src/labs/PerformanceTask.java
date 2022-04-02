@@ -16,18 +16,18 @@ public class PerformanceTask {
 	int time=0;
 	int yPos = 0;
 	double xPos=Math.cos(Math.toRadians(launchAngle)) * time * launchVelocity;
-	double ypos=Math.sin(Math.toRadians(launchAngle)) * time * launchVelocity - 0.5 * 9.8 * Math.p;
+	double ypos=Math.sin(Math.toRadians(launchAngle)) * time * launchVelocity - 0.5 * 9.8 * Math.PI;
 	boolean launch = true;
 	System.out.println("Time: " + time);
-	System.out.println("xPos:  " + xPos +" m");
-	System.out.println( "yPos:  " + yPos + " m");
+	System.out.println("xPos: " + xPos +" m");
+	System.out.println("yPos: " + yPos + " m");
 	
 	while (launch) {
 	
 	
 	     time++;
 	     xPos=Math.cos(Math.toRadians(launchAngle)) * time * launchVelocity;
-	     yPos=Math.sin(Math.toRadians(launchAngle)) * time * launchVelocity - 0.5 * 9.8 * Math.pow();
+	     yPos=(int) (Math.sin(Math.toRadians(launchAngle)) * time * launchVelocity - 0.5 * 9.8 * Math.PI);
 	     
 	     if (yPos < 0) {
 	         yPos=0;
@@ -35,8 +35,8 @@ public class PerformanceTask {
 	
 	     }
 	     System.out.println("Time: " + time );
-	   System.out.println("xPos:  " + xPos +" m");
-	   System.out.println( "yPos:  " + yPos + " m");
+	   System.out.println("xPos: " + xPos +" m");
+	   System.out.println("yPos: " + yPos + " m");
 
          if (yPos==0) {
              launch=false;

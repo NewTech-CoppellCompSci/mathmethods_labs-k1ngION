@@ -17,12 +17,12 @@ public class Lab01 {
 	
 	public static void problem01() {
 		Scanner inKey = new Scanner(System.in);
-		System.out.println("Choose a positive integer");
-		int userNum = inKey.nextInt()
-		System.out.println("Choose a positive integer");
-		int userNum2 = inKey.nextInt();
+		System.out.println("Enter in a positive integer");
+		int usernum = inKey.nextInt();
+		System.out.println("Enter in a positive integer again");
+		int usernum1 = inKey.nextInt();
 		
-		System.out.println(userNum + "^" + Math.pow(userNum, userNum2));
+		System.out.println(usernum +"^"+ Math.pow(usernum,usernum1));
 			
 		
 		
@@ -33,10 +33,10 @@ public class Lab01 {
 	
 	public static void problem02() {
 		Scanner inKey = new Scanner(System.in);
-		System.out.println("Choose a positice integer");
+		System.out.println("Type in a positive integer");
 		int userNum = inKey.nextInt();
 		
-		System.out.println("The square root of " + userNum + "is" + Math.sqrt(userNum));
+		System.out.println("The square root of the number " + userNum + " is " + Math.sqrt(userNum));
 		
 		
 	}
@@ -47,12 +47,12 @@ public class Lab01 {
 	public static void problem03() {
 		
 		Scanner inKey = new Scanner(System.in);
-		System.out.println("What is the side A of a right triangle");
-		int userNum = inKey.nextInt();
-		System.out.println("What is the B side of a right triangle");
-		int userNum2 = inKey.nextInt();
+		System.out.println("What's the side A of a right triangle");
+		int usernum = inKey.nextInt();
+		System.out.println("What's the B side of a right triangle");
+		int usernum1 = inKey.nextInt();
 		
-		System.out.println("Hypotenuse =" + Math.sqrt(Math.pow(userNum, 2)+(Math.pow(userNum2, 2))));
+		System.out.println("Hypotenuse = " + Math.sqrt(Math.pow(usernum, 2)+(Math.pow(usernum1, 2))));
 
 	}
 
@@ -68,7 +68,7 @@ public class Lab01 {
 		boolean not0 = true;
 		
 		while (not0) {
-			System.out.println("Choose a integer, choose 0 when your done");
+			System.out.println("Type in an integer.");
 			userNum = inKey1.nextInt();
 			if (userNum == 0) {
 				not0 = false;
